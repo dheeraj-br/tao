@@ -159,19 +159,19 @@ function CreateAccount() {
                                 <div className="col-sm-6">
                                     <strong className="">Password requirements</strong>
                                     <div className="form-check mt-2">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                                         <label className="form-check-label" htmlFor="flexCheckDefault">
                                             Characters from (Uppercase, lowercase, numbers, special Characters)
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                                         <label className="form-check-label" htmlFor="flexCheckDefault">
                                             Atlease 8 Characterslong
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                                         <label className="form-check-label" htmlFor="flexCheckDefault">
                                             cannot include parts of first name, last name or username
                                         </label>
@@ -215,7 +215,8 @@ function CreateAccount() {
                             <div className="form-check mt-3">
                                 <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                 <label className="form-check-label" htmlFor="flexCheckDefault">
-                                    I Authorize corporation, its distributors, affiliates, and wholly-owned subsidiaries to contact my telephone or email regarding the Sequel Insulin management system and other diabetes related supplies and services
+                                    I Authorize corporation, its distributors, affiliates, and wholly-owned subsidiaries to contact my telephone <br />
+                                    or email regarding the Sequel Insulin management system and other diabetes related supplies and services
                                 </label>
                             </div>
 
@@ -248,7 +249,7 @@ function CreateAccount() {
                                         <button type="submit" className="btn btn-secondary" disabled>Create Account</button>
                                 }
                             </div>
-                            <div className="mt-3">Already have an account?  <span className="text-primary">Sign In</span></div>
+                            <div className="mt-3 mb-5">Already have an account?  <span className="text-primary">Sign In</span></div>
                         </form>
                     </div>
                 </div>

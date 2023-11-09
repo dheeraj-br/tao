@@ -5,19 +5,22 @@ import Access from "./pages/Access";
 import CheckList from "./pages/Checklist";
 import CreateAccount from "./pages/CreateAccount";
 import ForgotPassword from "./pages/ForgotPassword";
+import Home from "./pages/Home";
 import ResetPassword from "./pages/ResetPassword";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-    <ResetPassword />
-      <ForgotPassword />
-      <CheckList />
-      <CreateAccount />
-      <CustomNav />
-      <GetStarted />
-      <Access />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/access" element={<Access />}></Route>
+        <Route path="/create-account" element={<CreateAccount />}></Route>
+        <Route path="/checklist" element={<CheckList />}></Route>
+        <Route path="/forgot-password" element={<ForgotPassword />}></Route>
+        <Route path="/reset-password" element={<ResetPassword />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

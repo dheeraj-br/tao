@@ -32,7 +32,7 @@ function CheckList() {
                             <div class="progress my-3" style={{ height: "12px" }}>
                                 <div class="progress-bar bg-custom" role="progressbar" style={{ width: "33%", height: "20px" }}></div>
                             </div>
-                            <div class="card mt-3" style={{ backgroundColor: "#fffcfc", paddingBottom: "10px", cursor:"pointer"}} onClick={setStepToOne}>
+                            <div class="card mt-3" style={{ backgroundColor: "#fffcfc", paddingBottom: "10px", cursor: "pointer" }} onClick={setStepToOne}>
                                 <div class="p-2 my-1">
                                     <div>
                                         <h6>Supply checklist</h6>
@@ -51,7 +51,7 @@ function CheckList() {
 
                                 </div>
                             </div>
-                            <div class="card mt-3" style={{ backgroundColor: "#fffcfc", paddingBottom: "10px", cursor:"pointer" }} onClick={setStepToTwo}>
+                            <div class="card mt-3" style={{ backgroundColor: "#fffcfc", paddingBottom: "10px", cursor: "pointer" }} onClick={setStepToTwo}>
                                 <div class="p-2 my-1">
                                     <div>
                                         <h6>Setup a trainer</h6>
@@ -162,7 +162,7 @@ function CheckList() {
                             </div> : <div className="container mt-5 text-center">
                                 <h1>Download controller app</h1>
                                 <h6>Start by downloading controller app for your Twiist device</h6>
-                                
+
                                 <img src="/images/img5.png" alt="logo" width="500" />
                                 <div className="d-grid mt-4">
                                     <button type="submit" className="btn btn-custom" onClick={handleSubmit}>Go to dashboard</button>

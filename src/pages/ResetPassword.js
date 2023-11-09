@@ -81,27 +81,27 @@ function ResetPassword() {
                                             </span></button>
                                         </div>
                                     </div>
-                                    
-                                <div className="d-grid mt-4">
-                                    <button type="button" className="btn btn-custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Change password</button>
-                                </div>
+
+                                    <div className="d-grid mt-4">
+                                        <button type="button" className="btn btn-custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Change password</button>
+                                    </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <strong className="">Password requirements</strong>
                                     <div className="form-check mt-2">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked/>
+                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                                         <label className="form-check-label" htmlFor="flexCheckDefault">
                                             Characters from (Uppercase, lowercase, numbers, special Characters)
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked/>
+                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                                         <label className="form-check-label" htmlFor="flexCheckDefault">
                                             Atlease 8 Characterslong
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked/>
+                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
                                         <label className="form-check-label" htmlFor="flexCheckDefault">
                                             cannot include parts of first name, last name or username
                                         </label>

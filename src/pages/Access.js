@@ -17,10 +17,10 @@ function Access() {
         }
     }
 
-    useEffect(()=>{
-        if(password && email) {
+    useEffect(() => {
+        if (password && email) {
             setCanSignin(true)
-        }else{
+        } else {
             setCanSignin(false)
         }
     }, [password, email])
@@ -41,8 +41,8 @@ function Access() {
                                         <p className="mb-3">Sign in to Sequel with your Email ID</p>
                                         <form className="pt-2">
                                             <div className="has-float-label mb-3">
-                                                <input className="form-control" id="email" type="email" placeholder="" 
-                                                        onChange={(e) => setEmail(e.target.value)}/>
+                                                <input className="form-control" id="email" type="email" placeholder=""
+                                                    onChange={(e) => setEmail(e.target.value)} />
                                                 <label htmlFor="email">Enter Email *</label>
                                             </div>
 
@@ -69,7 +69,7 @@ function Access() {
                                                 </div>
                                             </div>
                                             <div className="d-grid">
-                                                {canSignin? <button type="submit" className="btn btn-custom">Sign In</button> : <button type="submit" className="btn btn-secondary" disabled>Sign In</button>}                                                
+                                                {canSignin ? <button type="submit" className="btn btn-custom">Sign In</button> : <button type="submit" className="btn btn-secondary" disabled>Sign In</button>}
                                             </div>
                                             <div className="mt-1">Frogot your <span className="text-primary">Password?</span></div>
                                         </form>
