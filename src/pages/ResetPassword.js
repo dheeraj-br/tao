@@ -122,7 +122,7 @@ function ResetPassword() {
                                                         <img src="/images/img6.png" style={{ marginTop: "-90px" }} alt="logo" width="130" />
                                                         <h2>You've reset your password!</h2>
                                                         <div> You can now access the patient portal.</div>
-                                                        <Link to="/" style={{ textDecoration: "none" }} className="d-grid">
+                                                        <Link to="/dashboard" style={{ textDecoration: "none" }} className="d-grid">
                                                             <button type="button" className="btn btn-custom mt-3" data-bs-dismiss="modal">Login</button>
                                                         </Link>
                                                     </div></div>
