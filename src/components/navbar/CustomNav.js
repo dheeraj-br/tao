@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 function CustomNav() {
   return (
     <>
@@ -36,7 +38,9 @@ function CustomNav() {
                 </a>
               </li>
             </ul>
+            <Link to="/access">
             <button type="button" className="btn btn-custom">Get Started</button>
+            </Link>
           </div>
         </div>
       </nav>

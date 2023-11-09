@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom'
 
 function Access() {
     const [email, setEmail] = useState("");
@@ -69,9 +70,9 @@ function Access() {
                                                 </div>
                                             </div>
                                             <div className="d-grid">
-                                                {canSignin ? <button type="submit" className="btn btn-custom">Sign In</button> : <button type="submit" className="btn btn-secondary" disabled>Sign In</button>}
+                                                {canSignin ? <Link type="submit" to="/checklist" className="btn btn-custom">Sign In</Link> : <button type="submit" className="btn btn-secondary" disabled>Sign In</button>}
                                             </div>
-                                            <div className="mt-1">Frogot your <span className="text-primary">Password?</span></div>
+                                            <div className="mt-1">Frogot your <Link className="text-primary" style={{ textDecoration: "none" }} to="/forgot-password">Password?</Link></div>
                                         </form>
                                     </div>
                                 </div>
@@ -102,9 +103,9 @@ function Access() {
                                                     </ul>
                                                     </div>
                                                 </div>
-                                                <div className="d-grid">
+                                                <Link className="d-grid" style={{textDecoration: "none"}} to="/create-account">
                                                     <button type="submit" className="btn btn-custom">Create Account</button>
-                                                </div>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

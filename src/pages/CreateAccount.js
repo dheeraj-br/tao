@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom'
 
 function CreateAccount() {
     const [email, setEmail] = useState("");
@@ -232,9 +233,7 @@ function CreateAccount() {
                                                         <img src="/images/img3.png" style={{ marginTop: "-90px" }} alt="logo" width="130" />
                                                         <h2>Thank you!</h2>
                                                         <div> You will recieve a confirmation email shortly with a link to setup the rest of your account</div>
-                                                        <div className="d-grid">
-                                                            <button type="button" className="btn btn-custom mt-3" data-bs-dismiss="modal">Close</button>
-                                                        </div>
+                                                        <Link to="/access" className="d-grid" style={{ textDecoration: "none" }} > <button type="button" className="btn btn-custom mt-3" data-bs-dismiss="modal">Close</button></Link>
                                                     </div></div>
                                                 </div>
                                             </div>
@@ -249,7 +248,7 @@ function CreateAccount() {
                                         <button type="submit" className="btn btn-secondary" disabled>Create Account</button>
                                 }
                             </div>
-                            <div className="mt-3 mb-5">Already have an account?  <span className="text-primary">Sign In</span></div>
+                            <div className="mt-3 mb-5">Already have an account?   <Link className="text-primary" style={{ textDecoration: "none" }} to="/access">Sign in</Link></div>
                         </form>
                     </div>
                 </div>

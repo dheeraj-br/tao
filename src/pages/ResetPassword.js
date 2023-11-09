@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 
 function ResetPassword() {
     const [confirmPassword, setConfirmPassword] = useState("");
@@ -26,7 +27,7 @@ function ResetPassword() {
         }
     }
     return (<>
-        <section className="bg-light">
+        <section className="bg-light vh-100">
             <div className="container-fluid">
                 <div className="row justify-content-md-center">
                     <nav className="navbar navbar-light bg-light border-bottom px-3 py-3">
@@ -121,9 +122,9 @@ function ResetPassword() {
                                                         <img src="/images/img6.png" style={{ marginTop: "-90px" }} alt="logo" width="130" />
                                                         <h2>You've reset your password!</h2>
                                                         <div> You can now access the patient portal.</div>
-                                                        <div className="d-grid">
+                                                        <Link to="/" style={{ textDecoration: "none" }} className="d-grid">
                                                             <button type="button" className="btn btn-custom mt-3" data-bs-dismiss="modal">Login</button>
-                                                        </div>
+                                                        </Link>
                                                     </div></div>
                                                 </div>
                                             </div>
@@ -131,7 +132,7 @@ function ResetPassword() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-3">Go to  <span className="text-primary">Sign In</span></div>
+                            <div className="mt-3">Go to <Link className="text-primary" style={{ textDecoration: "none" }} to="/access">Sign in</Link></div>
                         </form>
                     </div>
                 </div>

@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom'
 
 function CheckList() {
 
     let [step, setStep] = useState(1)
+    let [progress, setProgress] = useState(33)
 
     function setStepToTwo() {
-        setStep(2)
+        setStep(2);
+        setProgress(66);
     }
     function setStepToOne() {
-        setStep(1)
+        setStep(1);
+        setProgress(33);
     }
 
     function setStepToThree() {
-        setStep(3)
+        setStep(3);
+        setProgress(100);
     }
-
-    function handleSubmit() {
-        console.log(step)
-    }
-
 
     return (<>
         <section className="">
@@ -30,7 +30,7 @@ function CheckList() {
                             <h1>Get start checklist</h1>
                             <h6>To get the best experience, we recommend completing these onboarding steps.</h6>
                             <div class="progress my-3" style={{ height: "12px" }}>
-                                <div class="progress-bar bg-custom" role="progressbar" style={{ width: "33%", height: "20px" }}></div>
+                                <div class="progress-bar bg-custom" role="progressbar" style={{ width: `${progress}%`, height: "20px" }}></div>
                             </div>
                             <div class="card mt-3" style={{ backgroundColor: "#fffcfc", paddingBottom: "10px", cursor: "pointer" }} onClick={setStepToOne}>
                                 <div class="p-2 my-1">
@@ -164,9 +164,9 @@ function CheckList() {
                                 <h6>Start by downloading controller app for your Twiist device</h6>
 
                                 <img src="/images/img5.png" alt="logo" width="500" />
-                                <div className="d-grid mt-4">
-                                    <button type="submit" className="btn btn-custom" onClick={handleSubmit}>Go to dashboard</button>
-                                </div>
+                                <Link className="d-grid mt-4" to="/dashboard" style={{ textDecoration: "none" }}>
+                                    <button type="submit" className="btn btn-custom">Go to dashboard</button>
+                                </Link>
                             </div>
                         }
                     </div>

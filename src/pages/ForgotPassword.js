@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom'
 
 function ForgotPassword() {
 
     const [email, setEmail] = useState("");
 
     return (<>
-        <section className="bg-light">
+        <section className="bg-light vh-100">
             <div className="container-fluid">
                 <div className="row justify-content-md-center">
                     <nav className="navbar navbar-light bg-light border-bottom px-3 py-3">
@@ -34,9 +35,9 @@ function ForgotPassword() {
                                                         <img src="/images/img3.png" style={{ marginTop: "-90px" }} alt="logo" width="130" />
                                                         <h2>Thank you!</h2>
                                                         <div> You will recieve a reminder email shortly.</div>
-                                                        <div className="d-grid">
+                                                        <Link to="/reset-password" style={{ textDecoration: "none" }} className="d-grid">
                                                             <button type="button" className="btn btn-custom mt-3" data-bs-dismiss="modal">Close</button>
-                                                        </div>
+                                                        </Link>
                                                     </div></div>
                                                 </div>
                                             </div>
@@ -47,7 +48,7 @@ function ForgotPassword() {
                             {email ? <div className="d-grid mt-4">
                                 <button type="button" className="btn btn-custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Submit</button>
                             </div> : ''}
-                            <div className="mt-3">Go to  <span className="text-primary">Sign In</span></div>
+                            <div className="mt-3">Go to <Link className="text-primary" style={{ textDecoration: "none" }} to="/access">Sign in</Link></div>
                         </form>
                     </div>
 
